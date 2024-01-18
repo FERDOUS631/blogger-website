@@ -1,0 +1,207 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+li{list-style:none;}
+a{text-align: none!important;}
+body{background-color: #fff;}
+html{
+     font-size: 70%; 
+}
+:root{
+    -title__font:-webkit-body;
+}
+p{
+    font-family:-webkit-body;
+    color:#222;
+    font-weight: bold;
+    font-size: 1.5rem!important;
+}
+/*****        to start main header div   *********/
+.main_header__div{
+    width: 100%;
+    height: calc(100vh - 40vh); 
+    background:linear-gradient(to right,rgba(0,0,0,0.8)50%,rgba(0,0,0,0)),url('../img/service\ img\ 3.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.main__title{
+    color: #fff;
+  font-family:var(-title__font);
+    font-weight: bold;
+    width: 100%!important;
+}
+.animateword{
+    color: #fff;
+    font-family: var(-title__font);
+    font-weight: bold;
+    text-transform:capitalize ;
+    font-size: 2rem;
+    
+}
+
+
+.animateword span::after{
+    content:"  a programmer";
+    display:contents;
+    text-transform: capitalize;
+    font-size:1.5rem;
+     /* margin: 0 1rem;  */
+    color:#fff;
+    /* padding: 0 1rem; */
+    /* background-color: yellow!important; */
+    font-family:math;
+    animation: fliqs 10s infinite linear;
+    
+}
+.main_header__div button{
+    color: #fff;  
+    padding: .5rem 2rem;
+    background-color: rgba(173, 236, 241, 0.959);
+    outline: none;
+    border-width:0;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-top:1rem;
+    border-radius: 2rem;
+    transition: 2s all ease;
+    transform: translateY(0);
+}
+.main_header__div button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 3rem 3rem -1rem rgb(139, 214, 224);
+}
+
+@keyframes fliqs{
+
+ 10%{ 
+    content:"  a youtuber";
+ }
+ 50%{
+     content:"  a freelancer";
+ }
+ 100%{
+     content:"  awseome";
+ }
+
+}
+/*****        to end main header div   *********/
+.content__div{
+    width: 100%;
+}
+.blog__title h1, .blog__title p{
+    color: rgb(95, 93, 93);
+    font-family: math;
+    font-size:2rem;
+    text-transform: capitalize;
+}
+.div_blog p{
+    font-family:serif;
+    color: rgb(95, 93, 93);
+    font-size:1rem !important;
+    text-transform: capitalize;
+
+}
+
+.img_blog__show,.popular_img_show{
+    width: 100%;
+}
+.left_like__button{
+    border-width:1;
+    outline: none;
+    padding:.8rem 1rem;
+    color: #fff;
+    font-weight: bold;
+    font-family: math;
+    background-color: rgba(57, 57, 235, 0.849);
+    text-transform: uppercase;
+}
+.left_comment__button{
+    border-width:1;
+    outline: none;
+    padding:.8rem 1rem;
+    color: #fff;
+    font-size: .9rem;
+    font-weight: bold;
+    font-family: math;
+    background-color: rgba(57, 57, 235, 0.849);
+    text-transform: uppercase;
+}
+.all_comment{
+    display:none;
+
+}
+.all_comment__show{
+    display: block;
+}
+/* right side start  */
+.about_me_div{
+    width: auto;
+    height:20rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    background:linear-gradient(to bottom,transparent 50%, rgb(0,0,0)),url('../img/director-img.jpg');;
+     background-repeat: no-repeat;
+     background-size:100% 100%;
+}
+.about_me_div p:first-child{
+    font-size: 1.5rem!important;
+}
+.about_me_div p{
+    color: #fff;
+    font-family: serif;
+    font-size: .8rem!important;
+}
+.popular_img_show img,.popular_img_show{
+    width: 50%!important;
+}
+.right_div_title{
+    border-bottom: 2px solid rgb(160, 154, 154);
+    text-transform: uppercase;
+    padding-top: 1rem!important;
+}
+.right_div_title p{
+    color: rgb(95, 93, 93);
+    font-weight: bold;
+}
+.right_sub_post p{
+    color: rgb(95, 93, 93);
+    font-weight: lighter;
+}
+.tags_div__items{
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(4rem,5rem));
+gap: .5rem;
+text-align: center;
+
+
+}
+.tags_div__items a{
+    background-color: rgb(95, 93, 93);
+    font-weight:bold;
+    font-size: .8rem;
+    color: rgb(235, 214, 214);
+font-family: Arial, Helvetica, sans-serif;
+}
+.tags_div__items a:hover{
+    color: #fff;
+    background-color:#222 ;
+}
+.subscrip_button a {
+font-weight: bold;
+background-color:rgb(139, 214, 224);
+border-radius: 2rem;
+transform: translateY(0);
+transition: 1s all ease;
+color: #fff;
+}
+.subscrip_button a:hover{
+    transform: translateY(-3px)!important;
+    box-shadow: 0 3rem 3rem -1rem rgb(139, 214, 224);
+    color: rgb(235, 214, 214);
+}
+/* right side div end  */
+.footer_div p{
+    font-size: .8rem!important;
+    color: rgb(95, 93, 93);
+}
